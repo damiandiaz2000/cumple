@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¡Feliz Cumpleaños Ing. Carlos Chávez!</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .card {
+            text-align: center;
+            padding: 40px;
+            border: 2px solid #007bff;
+            border-radius: 15px;
+            background: #161616;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+            z-index: 10;
+        }
+        h1 { color: #007bff; margin-bottom: 10px; }
+        p { font-size: 1.2rem; line-height: 1.6; }
+        .tech { font-family: monospace; color: #28a745; }
+        /* Animación simple de fondo */
+        .stars { position: absolute; width: 100%; height: 100%; top: 0; left: 0; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 id="titulo">🚀 Technofast Innovation</h1>
+        <hr style="border: 0.5px solid #333;">
+        <h2>¡Feliz Cumpleaños!</h2>
+        <p>Estimado <strong>Ing. Carlos Chávez</strong>,</p>
+        <p>Le deseamos un día lleno de éxito y una nueva vuelta al sol <br> liderando con la excelencia que lo caracteriza.</p>
+        <p class="tech">System.out.println("¡Salud y prosperidad!");</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        window.onload = function() {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#007bff', '#28a745', '#ffffff']
+            });
+        };
+    </script>
+</body>
+</html>
